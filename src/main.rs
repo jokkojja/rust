@@ -4,6 +4,9 @@ use solutions::structures_and_traits::structures_and_traits::{
     Circle, Drawable, Drower, Rectangle,
 };
 
+use solutions::associated_types::{
+    Circle as AssociatedCircle, Rectangle as AssociatedRectangle, Shape,
+};
 use solutions::global_traits::{ConsolePrinter, Message, Person, Printer};
 use solutions::operators::Point;
 use solutions::trait_bounds::figure_printer::{process, Rectangle as OtherRectangle, Square};
@@ -74,4 +77,13 @@ fn main() {
     let summ: Point = point_1 + point_2;
 
     println!("Summed point: {}", summ);
+
+    let rectangle: AssociatedRectangle = AssociatedRectangle {
+        width: 10,
+        height: 20,
+    };
+    let circle: AssociatedCircle = AssociatedCircle { radius: 15.0 };
+
+    println!("{}", rectangle.area());
+    println!("{}", circle.area());
 }
