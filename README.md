@@ -1,0 +1,2 @@
+# rust
+Studying rust
