@@ -14,6 +14,7 @@ use solutions::trait_bounds::figure_printer::{process, Rectangle as OtherRectang
 use solutions::trait_objects::{
     Circle as TraitCircle, Rectangle as TraitRectangle, Shape as TraitShape,
 };
+use solutions::type_programming::{attack, block, Mage, Warrior};
 fn main() {
     println!("Running ownership and borrowing task:");
     let sentence: &str = "Ya ebal cho tak slojno";
@@ -110,4 +111,10 @@ fn main() {
 
     println!("212°F in Celsius: {:.2}°C", converted_celsius.0);
     println!("100°C in Fahrenheit: {:.2}°F", converted_fahrenheit.0);
+
+    attack::<Warrior>();
+    block::<Warrior>();
+
+    attack::<Mage>();
+    block::<Mage>();
 }
