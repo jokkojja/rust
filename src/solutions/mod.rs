@@ -1,4 +1,5 @@
 pub mod associated_types;
+pub mod conditional_conformance;
 pub mod global_traits;
 pub mod iterators;
 pub mod matching;
@@ -7,3 +8,4 @@ pub mod operators;
 pub mod ownership_borrowing;
 pub mod structures_and_traits;
 pub mod trait_bounds;
+pub mod trait_objects;
