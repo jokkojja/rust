@@ -28,7 +28,7 @@ impl Shield for BoneShield {
 }
 impl Shield for GoldShield {
     fn block(&self) {
-        println!("Bone shild blocked")
+        println!("Gold shild blocked")
     }
 }
 impl Weapon for Sword {
